@@ -1,0 +1,102 @@
+@import './_function.scss';
+@import './_reset.scss';
+body{
+	width:100%;
+	font-size:13px;
+	background-color: #fafafa;
+	animation: lefteaseinAnimate 1s ease 1;
+}
+.en{
+	display: hidden;
+}
+.responseImg{
+	width:100%;
+	height:auto;
+}
+.content{
+	.maskparent{
+		position: relative;
+	}
+   .mask{
+	   position: absolute;
+	  
+	   bottom:0px;
+	   left:0px;
+	   right: 0px;
+	   width:100%;
+	
+	   height:100px;
+   }
+	.line{
+		border-bottom:1px solid #d0d5ce;
+		width:rem(600);
+		margin:auto;
+	}
+	.item{
+		width:rem(640);
+		height:46px;
+		padding:rem(29);
+		
+	}
+	.codeparent{
+		position: relative;
+		.code{
+			position: absolute;
+			right:rem(30);
+			height:31px;
+			line-height: 31px;
+			top:8px;
+			bottom:8px;
+			background-color: #ff3333;
+			color:white;
+			padding-left: 17.5px;
+			padding-right:17.5px;
+			// padding-top:6px;
+			border-radius: 14px;
+			vertical-align: middle;
+		}
+		
+	}
+}
+
+.btn{
+	 text-align: center;
+	 margin-top:30px;
+	.regbutton{
+		display: inline-block;
+		background-color:#ff3333;
+		color:white;
+		width:rem(398);
+		text-align: center;
+		padding-top:11px;
+		padding-bottom:11px;
+		border-radius: 18px;
+	}
+}
+.footer{
+	margin-top:32px;
+	.codeimg{
+	   margin: auto;
+       width:rem(232);
+	   height:auto;
+	}
+    .footcontent{
+		margin-top:9px;
+		p{
+			margin:0px;
+			padding:0px;
+			text-align: center;
+			color:#7e8699;
+		}
+	}
+}
+ @keyframes lefteaseinAnimate {
+   0% {
+      opacity: 0;
+   }
+   /*在0%时设置文字在想X轴-2000px位移处（左边），透明度为0，也就是看不见文字*/
+   100% {
+      opacity: 1;
+   }
+   /*在100%时设置文字在想X轴0px位移处，也就是原始布局的位置，透明度为1，也就是文字可以看见了*/
+}

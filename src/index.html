@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="styles/index.css" />
+    <script src='scripts/response.js'></script>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title id="Title">分享注册</title>
+</head>
+
+<body>
+    <div class="titlePic">
+        <img src="./images/title.png" alt="" class="responseImg">
+    </div>
+    <div class="content cn">
+        <div>
+            <input class="item" type="text" placeholder="账号/邮箱" id="acount">
+        </div>
+        <div class="line"></div>
+        <div class="codeparent">
+            <input class="item" type="text" placeholder="验证码" id="codevalue">
+            <span class="code" id="jq_send">发送验证码</span>
+        </div>
+        <div class="line"></div>
+        <div class="maskparent">
+            <input class="item" type="text" placeholder="推荐人邮箱" id="refemail">
+            <div class="mask item"></div>
+        </div>
+        <div class="line"></div>
+        <div>
+            <input class="item" type="password" placeholder="新密码" id="password">
+        </div>
+        <div class="line"></div>
+        <div>
+            <input class="item" type="password" placeholder="确认密码" id="newpassword">
+        </div>
+    </div>
+
+    <div class="btn cn">
+        <button class="regbutton" id="jq_regist">注册</button>
+    </div>
+
+    <div class="content en">
+        <div>
+            <input class="item" type="text" placeholder="Account/Email" id="enacount">
+        </div>
+        <div class="line"></div>
+        <div class="codeparent">
+            <input class="item" type="text" placeholder="Verification Code " id="encodevalue">
+            <span class="code" id="enjq_send">Send code</span>
+        </div>
+        <div class="line"></div>
+        <div class="maskparent">
+            <input class="item" type="text" placeholder="Referee’s Email" id="enrefemail">
+            <div class="mask item"></div>
+        </div>
+        <div class="line"></div>
+        <div>
+            <input class="item" type="password" placeholder="New Password" id="enpassword">
+        </div>
+        <div class="line"></div>
+        <div>
+            <input class="item" type="password" placeholder="Confirm Password" id="ennewpassword">
+        </div>
+    </div>
+    <div class="btn en">
+        <button class="regbutton" id="enjq_regist">Register</button>
+    </div>
+    <div class="footer">
+        <div class="codeimg">
+            <img src="./images/codepic.png" alt="" class="responseImg">
+        </div>
+        <div class="footcontent cn">
+            <p>长按二维码下载应用</p>
+            <p>阅读更多教学资讯</p>
+        </div>
+        <div class="footcontent en">
+            <p>Long press the QR code to download,</p>
+            <p> and acquire more teaching information</p>
+        </div>
+    </div>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
